@@ -1,14 +1,20 @@
 # FastAPI_NER
 ## 1) Build the Docker Image
 docker build -t fastapi_ner:latest .
+
 docker ps -a
+
 ## 2) Run the Docker Image
 docker run -d --name ner -p 8000:8000 <Image_ID>
+
 docker logs ner
+
 ## 3) Checking if the FastAPI code is running or not
 curl localhost:8000
+
 ## 4) Installing the nginx server
 sudo apt install nginx
+
 ## 5) Using sudo nano /etc/nginx/sites-enabled/fastapi-demo, make the changes in this file
 server {
     listen 80;
