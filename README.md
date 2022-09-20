@@ -31,5 +31,6 @@ server {
 sudo service nginx restart
 ## 8) Check the status
 systemctl status nginx.service
-## 9) Test the POST query on POSTMAN using <Public_Ipv4_address_of_EC2>:80/ner and on FastAPI docs using <Public_Ipv4_address_of_EC2>:80/docs. 
-e.g 35.93.58.234:80/ner and http://35.93.58.234/docs
+## 9) Test the POST query on POSTMAN and on FastAPI docs . 
+e.g 1) 35.93.58.234:80/ner (POSTMAN) and 
+    2) http://35.93.58.234/docs (FastAPI docs)
